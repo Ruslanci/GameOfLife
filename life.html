@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Game "Life"</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="stylesheet" type="text/css" href="lifestyles.css">
+		
+		<script type="module" src="./world.js"></script>
+	</head>	
+	<body>
+		<div class="game">
+			<div class="inputs">
+			<div class="buttons">
+				<input type="button" value="next" onclick="next();">
+				<input type="button" value="start" onclick="go();">
+				<input type="button" value="stop" onclick="stop();">
+				<input type="button" value="random" onclick="random();">
+			</div>
+			
+			<div class="size">
+				<input type="text" id="height" value=60>
+				<input type="text" id="width" value=60>
+				<input type="button" class="wide" value="new world" onclick="newWorld();">
+			</div>
+			</div>
+			<table id="world">
+			</table>
+		</div>
+
+	</body>
+</html>
